@@ -12,7 +12,7 @@ public class Course {
 	/* Begin instance variables (aka data members) */
 	private String title;
 	private String teacher;
-	private Student[] students;
+	Student[] students;
 	private String room;
 	
 	/* Data members above, methods below */
@@ -33,7 +33,7 @@ public class Course {
 		for (Student oneStudent: students) {
 			if (oneStudent == null)
 				break;
-			output += oneStudent.getName() + " " + oneStudent.getGender() + " " + classYrNames[oneStudent.getClassYr()] + " " + oneStudent.getAge() + "\n";
+			output += oneStudent.getName() + " " + oneStudent.getGender() + " " + classYrNames[oneStudent.getClassYr()] + " " + oneStudent.getAge() + oneStudent.getHaircolor() + " " + "\n";
 			}
 		return output;
 	}
